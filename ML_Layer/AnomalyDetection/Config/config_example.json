@@ -1,0 +1,849 @@
+{
+    "model_id": "MABpredictiveMaintenance",
+    "db_config": {
+           "type": "InfluxDB"
+    },
+    "time_series": [
+           {
+                  "name": "mabCompressor_airMassFlowinTon(T/hr)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabCompressor_airMassFlowinTon"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabCompressor_inletAirTemperature1(degree C)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabCompressor_inletAirTemperature1"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabCompressor_inletAirTemperature2(degree C)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabCompressor_inletAirTemperature2"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabCompressor_outletAirTemperature1(degree C)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabCompressor_outletAirTemperature1"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabCompressor_speed1(rpm)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabCompressor_speed1"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabCompressor_speed2(rpm)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabCompressor_speed2"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabCompressor_vibrationDE1(micro m)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabCompressor_vibrationDE1"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabCompressor_vibrationDE2(micro m)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabCompressor_vibrationDE2"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabCompressor_vibrationNDE1(micro m)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabCompressor_vibrationDE2"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabCompressor_vibrationNDE2(micro m)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabCompressor_vibrationNDE2"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabTurbine_inletSteamPressure1(KG/CM2G)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabTurbine_inletSteamPressure1"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabTurbine_inletSteamTemperature1(degree C)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabTurbine_inletSteamTemperature1"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabTurbine_journalBearingSideTemperature1(degree C)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabTurbine_journalBearingSideTemperature1"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabTurbine_journalBearingSideTemperature2(degree C)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabTurbine_journalBearingSideTemperature2"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabTurbine_journalBearingSideTemperature3(degree C)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabTurbine_journalBearingSideTemperature3"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabTurbine_journalBearingSideTemperature4(degree C)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabTurbine_journalBearingSideTemperature4"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabTurbine_steamMassFlow1(MT/hr)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabTurbine_steamMassFlow1"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabTurbine_thrustBearingSideTemperature1(degree C)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabTurbine_thrustBearingSideTemperature1"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabTurbine_thrustBearingSideTemperature2(degree C)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabTurbine_thrustBearingSideTemperature2"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabTurbine_thrustBearingSideTemperature3(degree C)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabTurbine_thrustBearingSideTemperature3"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabTurbine_thrustBearingSideTemperature4(degree C)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabTurbine_thrustBearingSideTemperature4"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabTurbine_turbineJournalBearingSideTemperature1(degree C)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabTurbine_turbineJournalBearingSideTemperature1"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabTurbine_turbineJournalBearingSideTemperature2(degree C)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabTurbine_turbineJournalBearingSideTemperature2"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabTurbine_turbineJournalBearingSideTemperature3(degree C)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabTurbine_turbineJournalBearingSideTemperature3"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabTurbine_turbineJournalBearingSideTemperature4(degree C)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabTurbine_turbineJournalBearingSideTemperature4"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabTurbine_turbineSpeed1(rpm)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabTurbine_turbineSpeed1"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabTurbine_turbineSpeed2(rpm)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabTurbine_turbineSpeed2"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabTurbine_turbineSpeed3(rpm)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabTurbine_turbineSpeed3"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabTurbine_turbineThrustBearingSideTemperature1(degree C)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabTurbine_turbineThrustBearingSideTemperature1"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabTurbine_turbineThrustBearingSideTemperature2(degree C)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabTurbine_turbineThrustBearingSideTemperature2"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabTurbine_turbineThrustBearingSideTemperature3(degree C)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabTurbine_turbineThrustBearingSideTemperature3"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabTurbine_turbineThrustBearingSideTemperature4(degree C)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabTurbine_turbineThrustBearingSideTemperature4"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabTurbine_turbineVibrationDE1(micro m)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabTurbine_turbineVibrationDE1"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabTurbine_turbineVibrationDE2(micro m)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabTurbine_turbineVibrationDE2"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabTurbine_turbineVibrationNDE1(micro m)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabTurbine_turbineVibrationNDE1"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           },
+           {
+                  "name": "mabTurbine_turbineVibrationNDE2(micro m)",
+                  "source": "InfluxDB",
+                  "db_details": {
+                         "bucket": "iocl_paradip_dev",
+                         "measurement": "KPI_data",
+                         "tags": {
+                                "KPI_name": [
+                                       "mabTurbine_turbineVibrationNDE2"
+                                ]
+                         }
+                  },
+                  "granularity": "1m"
+           }
+    ],
+    "shutdown_period": [
+           {
+                  "start_time": "2019-12-31 00:00:00",
+                  "end_time": "2020-06-01 00:00:00"
+           },
+           {
+                  "start_time": "2020-07-05 06:00:00",
+                  "end_time": "2020-07-06 09:00:00"
+           },
+           {
+                  "start_time": "2020-07-27 20:00:00",
+                  "end_time": "2020-08-22 10:00:00"
+           },
+           {
+                  "start_time": "2020-12-12 20:00:00",
+                  "end_time": "2021-01-02 14:00:00"
+           },
+           {
+                  "start_time": "2021-04-25 20:00:00",
+                  "end_time": "2021-04-26 15:00:00"
+           },
+           {
+                  "start_time": "2021-09-15 16:00:00",
+                  "end_time": "2021-09-18 16:00:00"
+           },
+           {
+                  "start_time": "2021-10-27 11:00:00",
+                  "end_time": "2021-11-04 08:00:00"
+           },
+           {
+                  "start_time": "2022-08-01 00:00:00",
+                  "end_time": "2022-12-31 00:00:00"
+           }
+    ],
+    "data_cleaning": {
+           "universal": {
+                  "shutdown_period_removal": "remove_rows"
+           },
+           "default": {
+                  "handle_missing_values": "mean",
+                  "negative_values": "mean"
+           },
+           "series_specific": {}
+    },
+    "data_preprocessing": {
+           "default": {
+                  "methods": [
+                         "normalize"
+                  ]
+           },
+           "time_series_specific": [],
+           "mandatory": {
+                  "methods": [
+                         "remove_na"
+                  ]
+           }
+    },
+    "feature_engineering": {
+           "default": {
+                  "features": [
+                         "mean",
+                         "std",
+                         "max",
+                         "min",
+                         "autocorr"
+                  ],
+                  "reference_name": "default_features"
+           },
+           "time_series_specific": [],
+           "rolling_window": "30T"
+    },
+    "output_storage": {
+           "DB": "InfluxDB",
+           "credentials": {
+                  "bucket": "predictive_maintenance",
+                  "measurement": "testing_measurement_1m"
+           },
+           "data_storage": {
+                  "result": {
+                         "tags": {
+                                "equipment": "mabCompressor"
+                         },
+                         "fields": [
+                                "all"
+                         ]
+                  }
+           }
+    },
+    "ML_implementation": [
+           {
+                  "sub_model_id": "01",
+                  "implementation_type": "Univariate",
+                  "model": "IsolationForest",
+                  "series_names": [
+                         "mabCompressor_airMassFlowinTon(T/hr)",
+                         "mabCompressor_inletAirTemperature1(degree C)",
+                         "mabCompressor_inletAirTemperature2(degree C)",
+                         "mabCompressor_outletAirTemperature1(degree C)",
+                         "mabCompressor_speed1(rpm)",
+                         "mabCompressor_speed2(rpm)",
+                         "mabCompressor_vibrationDE1(micro m)",
+                         "mabCompressor_vibrationDE2(micro m)",
+                         "mabCompressor_vibrationNDE1(micro m)",
+                         "mabCompressor_vibrationNDE2(micro m)",
+                         "mabTurbine_inletSteamPressure1(KG/CM2G)",
+                         "mabTurbine_inletSteamTemperature1(degree C)",
+                         "mabTurbine_journalBearingSideTemperature1(degree C)",
+                         "mabTurbine_journalBearingSideTemperature2(degree C)",
+                         "mabTurbine_journalBearingSideTemperature3(degree C)",
+                         "mabTurbine_journalBearingSideTemperature4(degree C)",
+                         "mabTurbine_steamMassFlow1(MT/hr)",
+                         "mabTurbine_thrustBearingSideTemperature1(degree C)",
+                         "mabTurbine_thrustBearingSideTemperature2(degree C)",
+                         "mabTurbine_thrustBearingSideTemperature3(degree C)",
+                         "mabTurbine_thrustBearingSideTemperature4(degree C)",
+                         "mabTurbine_turbineJournalBearingSideTemperature1(degree C)",
+                         "mabTurbine_turbineJournalBearingSideTemperature2(degree C)",
+                         "mabTurbine_turbineJournalBearingSideTemperature3(degree C)",
+                         "mabTurbine_turbineJournalBearingSideTemperature4(degree C)",
+                         "mabTurbine_turbineSpeed1(rpm)",
+                         "mabTurbine_turbineSpeed2(rpm)",
+                         "mabTurbine_turbineSpeed3(rpm)",
+                         "mabTurbine_turbineThrustBearingSideTemperature1(degree C)",
+                         "mabTurbine_turbineThrustBearingSideTemperature2(degree C)",
+                         "mabTurbine_turbineThrustBearingSideTemperature3(degree C)",
+                         "mabTurbine_turbineThrustBearingSideTemperature4(degree C)",
+                         "mabTurbine_turbineVibrationDE1(micro m)",
+                         "mabTurbine_turbineVibrationDE2(micro m)",
+                         "mabTurbine_turbineVibrationNDE1(micro m)",
+                         "mabTurbine_turbineVibrationNDE2(micro m)"
+                  ]
+           },
+           {
+                  "sub_model_id": "02",
+                  "implementation_type": "Multivariate",
+                  "model": "IsolationForest",
+                  "series_names": [
+                         "mabCompressor_airMassFlowinTon",
+                         "mabCompressor_inletAirTemperature1",
+                         "mabCompressor_inletAirTemperature2",
+                         "mabCompressor_outletAirTemperature1",
+                         "mabCompressor_speed1",
+                         "mabCompressor_speed2",
+                         "mabCompressor_vibrationDE1",
+                         "mabCompressor_vibrationDE2",
+                         "mabCompressor_vibrationNDE1",
+                         "mabCompressor_vibrationNDE2",
+                         "mabTurbine_inletSteamPressure1",
+                         "mabTurbine_inletSteamTemperature1",
+                         "mabTurbine_journalBearingSideTemperature1",
+                         "mabTurbine_journalBearingSideTemperature2",
+                         "mabTurbine_journalBearingSideTemperature3",
+                         "mabTurbine_journalBearingSideTemperature4",
+                         "mabTurbine_steamMassFlow1",
+                         "mabTurbine_thrustBearingSideTemperature1",
+                         "mabTurbine_thrustBearingSideTemperature2",
+                         "mabTurbine_thrustBearingSideTemperature3",
+                         "mabTurbine_thrustBearingSideTemperature4",
+                         "mabTurbine_turbineJournalBearingSideTemperature1",
+                         "mabTurbine_turbineJournalBearingSideTemperature2",
+                         "mabTurbine_turbineJournalBearingSideTemperature3",
+                         "mabTurbine_turbineJournalBearingSideTemperature4",
+                         "mabTurbine_turbineSpeed1",
+                         "mabTurbine_turbineSpeed2",
+                         "mabTurbine_turbineSpeed3",
+                         "mabTurbine_turbineThrustBearingSideTemperature1",
+                         "mabTurbine_turbineThrustBearingSideTemperature2",
+                         "mabTurbine_turbineThrustBearingSideTemperature3",
+                         "mabTurbine_turbineThrustBearingSideTemperature4",
+                         "mabTurbine_turbineVibrationDE1",
+                         "mabTurbine_turbineVibrationDE2",
+                         "mabTurbine_turbineVibrationNDE1",
+                         "mabTurbine_turbineVibrationNDE2"
+                  ]
+           },
+           {
+                  "sub_model_id": "03",
+                  "implementation_type": "Multivariate",
+                  "model": "Autoencoder",
+                  "series_names": [
+                         "mabCompressor_airMassFlowinTon",
+                         "mabCompressor_inletAirTemperature1",
+                         "mabCompressor_inletAirTemperature2",
+                         "mabCompressor_outletAirTemperature1",
+                         "mabCompressor_speed1",
+                         "mabCompressor_speed2",
+                         "mabCompressor_vibrationDE1",
+                         "mabCompressor_vibrationDE2",
+                         "mabCompressor_vibrationNDE1",
+                         "mabCompressor_vibrationNDE2",
+                         "mabTurbine_inletSteamPressure1",
+                         "mabTurbine_inletSteamTemperature1",
+                         "mabTurbine_journalBearingSideTemperature1",
+                         "mabTurbine_journalBearingSideTemperature2",
+                         "mabTurbine_journalBearingSideTemperature3",
+                         "mabTurbine_journalBearingSideTemperature4",
+                         "mabTurbine_steamMassFlow1",
+                         "mabTurbine_thrustBearingSideTemperature1",
+                         "mabTurbine_thrustBearingSideTemperature2",
+                         "mabTurbine_thrustBearingSideTemperature3",
+                         "mabTurbine_thrustBearingSideTemperature4",
+                         "mabTurbine_turbineJournalBearingSideTemperature1",
+                         "mabTurbine_turbineJournalBearingSideTemperature2",
+                         "mabTurbine_turbineJournalBearingSideTemperature3",
+                         "mabTurbine_turbineJournalBearingSideTemperature4",
+                         "mabTurbine_turbineSpeed1",
+                         "mabTurbine_turbineSpeed2",
+                         "mabTurbine_turbineSpeed3",
+                         "mabTurbine_turbineThrustBearingSideTemperature1",
+                         "mabTurbine_turbineThrustBearingSideTemperature2",
+                         "mabTurbine_turbineThrustBearingSideTemperature3",
+                         "mabTurbine_turbineThrustBearingSideTemperature4",
+                         "mabTurbine_turbineVibrationDE1",
+                         "mabTurbine_turbineVibrationDE2",
+                         "mabTurbine_turbineVibrationNDE1",
+                         "mabTurbine_turbineVibrationNDE2"
+                  ]
+           },
+           {
+                  "sub_model_id": "05",
+                  "implementation_type": "Multivariate",
+                  "model": "LOF",
+                  "series_names": [
+                         "mabCompressor_airMassFlowinTon",
+                         "mabCompressor_inletAirTemperature1",
+                         "mabCompressor_inletAirTemperature2",
+                         "mabCompressor_outletAirTemperature1",
+                         "mabCompressor_speed1",
+                         "mabCompressor_speed2",
+                         "mabCompressor_vibrationDE1",
+                         "mabCompressor_vibrationDE2",
+                         "mabCompressor_vibrationNDE1",
+                         "mabCompressor_vibrationNDE2",
+                         "mabTurbine_inletSteamPressure1",
+                         "mabTurbine_inletSteamTemperature1",
+                         "mabTurbine_journalBearingSideTemperature1",
+                         "mabTurbine_journalBearingSideTemperature2",
+                         "mabTurbine_journalBearingSideTemperature3",
+                         "mabTurbine_journalBearingSideTemperature4",
+                         "mabTurbine_steamMassFlow1",
+                         "mabTurbine_thrustBearingSideTemperature1",
+                         "mabTurbine_thrustBearingSideTemperature2",
+                         "mabTurbine_thrustBearingSideTemperature3",
+                         "mabTurbine_thrustBearingSideTemperature4",
+                         "mabTurbine_turbineJournalBearingSideTemperature1",
+                         "mabTurbine_turbineJournalBearingSideTemperature2",
+                         "mabTurbine_turbineJournalBearingSideTemperature3",
+                         "mabTurbine_turbineJournalBearingSideTemperature4",
+                         "mabTurbine_turbineSpeed1",
+                         "mabTurbine_turbineSpeed2",
+                         "mabTurbine_turbineSpeed3",
+                         "mabTurbine_turbineThrustBearingSideTemperature1",
+                         "mabTurbine_turbineThrustBearingSideTemperature2",
+                         "mabTurbine_turbineThrustBearingSideTemperature3",
+                         "mabTurbine_turbineThrustBearingSideTemperature4",
+                         "mabTurbine_turbineVibrationDE1",
+                         "mabTurbine_turbineVibrationDE2",
+                         "mabTurbine_turbineVibrationNDE1",
+                         "mabTurbine_turbineVibrationNDE2"
+                  ]
+           }
+    ],
+    "PostProcessing": {
+           "model_specific": {
+                  "01": {
+                         "output": [
+                                "normalizedAnomalyScore",
+                                "Total_Anomaly_Score",
+                                "Anomaly",
+                                "riskThreshold",
+                                "ranking",
+                                "Threshold"
+                         ],
+                         "Threshold": 30,
+                         "riskThreshold": "value_4"
+                  },
+                  "02": {
+                         "output": [
+                                "normalizedAnomalyScore",
+                                "Total_Anomaly_Score",
+                                "Anomaly",
+                                "riskThreshold",
+                                "Threshold"
+                         ],
+                         "Threshold": 30,
+                         "riskThreshold": "value_4"
+                  },
+                  "03": {
+                         "output": [
+                                "normalizedAnomalyScore",
+                                "Total_Anomaly_Score",
+                                "Anomaly",
+                                "riskThreshold",
+                                "Threshold"
+                         ],
+                         "Threshold": 30,
+                         "riskThreshold": "value_4"
+                  },
+                  "05": {
+                         "output": [
+                                "normalizedAnomalyScore",
+                                "Total_Anomaly_Score",
+                                "Anomaly",
+                                "riskThreshold",
+                                "Threshold"
+                         ],
+                         "Threshold": 30,
+                         "riskThreshold": "value_4"
+                  }
+           },
+           "combine_results": {
+                  "models_to_combine": [
+                         "01",
+                         "02",
+                         "03",
+                         "05"
+                  ],
+                  "combination_method": [
+                         "voting",
+                         "weighted_average",
+                         "healthContributor",
+                         "anomalyScore",
+                         "healthScore",
+                         "risk_threshold",
+                         "status"
+                  ],
+                  "weights": [
+                         1,
+                         1,
+                         1,
+                         1,
+                         1
+                  ],
+                  "threshold": 45,
+                  "risk_threshold": 35
+           }
+    }
+}

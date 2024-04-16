@@ -1,0 +1,14 @@
+
+
+{
+    "AREA": "HYDRO_AREA",
+
+    "fetch":{
+        "DCS": ["Water_Quality_ppm", "Steam_Quality_%", "Electricity_Price_$"] ,
+        "lab": ["Electricity_Consumption_kWh", "Steam_Generation_Rate_kg_hr", "Water_Consumption_m3_hr", "FuelGas_Consumption_m3_hr"] },
+
+
+    "KPIs":["EnergyEfficiency_kWh_bbl", "WaterUsageEfficiency_m3_bbl", "SteamGenerationEfficiency_%"]
+
+
+}

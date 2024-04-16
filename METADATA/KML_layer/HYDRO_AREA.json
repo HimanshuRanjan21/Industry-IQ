@@ -1,0 +1,14 @@
+
+
+{
+    "AREA": "HYDRO_AREA",
+
+    "fetch":{
+        "DCS": ["Hydrogen_Purity_%", "Catalyst_Activity_%", "Sulfur_Content_%"] ,
+        "lab": ["Temperature_C", "Pressure_bar", "FlowRate_m3_hr", "Level_%", "ConversionRate_%"] },
+
+
+    "KPIs":["ConversionEfficiency_%", "ProductYield_bbl_day", "HydrogenConsumptionRate_m3_day"]
+
+
+}

@@ -1,0 +1,15 @@
+
+
+{
+    "AREA": "CRUDE_AREA",
+
+    "fetch":{
+        "DCS": ["Temperature_C", "Pressure_bar", "FlowRate_m3_hr", "Level_%","HeatExchangerEfficiency_%"] ,
+        "lab": ["API_Gravity", "Sulfur_Content_%","Viscosity_cP"] },
+
+
+    "KPIs":["Yield_bbl_day", "EnergyEfficiency_%",
+    "DistillationEfficiency_%"]
+
+
+}
