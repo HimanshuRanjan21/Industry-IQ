@@ -154,9 +154,14 @@ class APIHandler:
         # initialize a new dataframe to store the results
         df_all = pd.DataFrame()
 
+        tag = {
+            "sensor_id" : sensor_id,
+            "sensor_data" : sensor_data
+        }
+
         # split the tag dictionary into separate lists of keys and values
-        keys = list(sensor_id)
-        values = list(sensor_data)
+        keys = list(tag.keys())
+        values = list(tag.values())
         ii = 0
         for combination in product(*values):
             output1 = []
