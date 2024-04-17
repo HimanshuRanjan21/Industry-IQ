@@ -3,8 +3,8 @@
 "data_to_fetch":{
     "DB": "InfluxDB",
     "credentials": {
-           "bucket": "Plant_data",
-           "measurement": "All_datas",
+           "bucket": "plant",
+           "measurement": "tag_data",
            "tag_name":[]
     }},
 
