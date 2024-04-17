@@ -1,8 +1,3 @@
-################################
-# Vijeet Nigam
-# InfluxDB Functions and Classes
-################################
-
 # Importing Necessary Libraries
 import numpy as np
 import pandas as pd
@@ -173,13 +168,13 @@ class APIHandler:
                 output1.append(output)
             
             filter_condition = ' and '.join(output1)
-            print(f'{ii} {datetime.now()} Filter Condition: {filter_condition}', end=" ")
+            print(f'\n {ii} {datetime.now()} Filter Condition: {filter_condition}\n', end=" ")
             ii+=1
             # formulate the flux query
-            if resampling_freq==0 or resampling_freq=="0":
+            if resampling_freq=="0m":
                 flux_query = f'''
                     from(bucket: "{bucket}")
-                    |> range(start: {timeRangeStart}, stop: {timeRangeStop})
+                    |> range(start: time(v: "{timeRangeStart}"), stop: time(v: "{timeRangeStop}"))
                     |> filter(fn: (r) => r["_measurement"] == "{measurement}")
                     |> filter(fn: (r) => {filter_condition})
                     |> filter(fn: (r) => r["_field"] == "_value")
@@ -187,7 +182,7 @@ class APIHandler:
             else:
                 flux_query = f'''
                     from(bucket: "{bucket}")
-                    |> range(start: {timeRangeStart}, stop: {timeRangeStop})
+                    |> range(start: time(v: "{timeRangeStart}"), stop: time(v: "{timeRangeStop}"))
                     |> filter(fn: (r) => r["_measurement"] == "{measurement}")
                     |> filter(fn: (r) => {filter_condition})
                     |> filter(fn: (r) => r["_field"] == "_value")
@@ -230,9 +225,7 @@ class APIHandler:
         df_all.index = pd.to_datetime(df_all.index) + pd.Timedelta(offset)
         df_all = df_all.sort_values(by="Timestamp")
 
-        json_data = df_all.to_json(orient="index")
-
-        return json_data
+        return df_all
     
 # Create a ConfigParser instance
 config = configparser.ConfigParser()

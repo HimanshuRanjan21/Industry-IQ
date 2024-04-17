@@ -1,0 +1,71 @@
+Database Schema Documentation (Influx Database)
+
+Bucket: plant
+
+Measurement: tag_data
+
+Field: _value
+
+Tags:
+
+sensor_data: utilities_AREA
+sensor_id:
+    Electricity_Consumption_kWh
+    Steam_Generation_Rate_kg_hr
+    Water_Consumption_m3_hr
+    FuelGas_Consumption_m3_hr
+    Water_Quality_ppm
+    Steam_Quality_%
+    Electricity_Price_$
+    EnergyEfficiency_kWh_bbl
+    WaterUsageEfficiency_m3_bbl
+    SteamGenerationEfficiency_%
+
+sensor_data: HYDRO_AREA
+sensor_id:
+    Temperature_C
+    Pressure_bar
+    FlowRate_m3_hr
+    Level_%
+    ConversionRate_%
+    Hydrogen_Purity_%
+    Catalyst_Activity_%
+    Sulfur_Content_%
+    ConversionEfficiency_%
+    ProductYield_bbl_day
+    HydrogenConsumptionRate_m3_day
+
+sensor_data: CRUDE_AREA
+sensor_id:
+    Temperature_C
+    Pressure_bar
+    FlowRate_m3_hr
+    Level_%
+    HeatExchangerEfficiency_%
+    API_Gravity
+    Sulfur_Content_%
+    Viscosity_cP
+    Yield_bbl_day
+    EnergyEfficiency_%
+    DistillationEfficiency_%
+
+sensor_data: overall_AREA
+sensor_id:
+    OverallPlantYield_bbl_day
+    OverallPlantEnergyEfficiency_%
+    TotalRevenue_$
+    TotalCost_$
+
+**This is a hour-level time-series data of the complete year 2023.
+
+Bucket: A logical container for time series data in InfluxDB. Here, it's named "plant," presumably representing data related to a plant or industrial facility.
+
+Measurement: A collection of fields and tags representing a specific type of data. In this case, it's "tag_data," which could indicate metadata or descriptive tags associated with sensor readings.
+
+Field: The actual data value being measured or recorded. The field here is "_value," which may store numerical or textual data representing various sensor readings or measurements.
+
+Tags: Metadata or labels providing additional context to the data. Tags are key-value pairs that help in organizing and querying the data efficiently. In this schema:
+
+sensor_data: A tag categorizing the type of sensor data being collected. It has multiple possible values, each representing a different area or aspect of the plant (utilities, hydro, crude, overall).
+
+sensor_id: Another tag specifying the specific sensor or parameter being measured within each area. For example, in "utilities_AREA," sensor_id can represent parameters like electricity consumption, steam generation rate, water consumption, etc.
