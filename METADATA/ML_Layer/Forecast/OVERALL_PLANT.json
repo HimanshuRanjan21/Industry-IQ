@@ -1,0 +1,79 @@
+{"AREA_id":"CRUDE_AREA",
+
+"data_to_fetch":{
+    "DB": "InfluxDB",
+    "credentials": {
+           "bucket": "Plant_data",
+           "measurement": "All_datas",
+           "tag_name":[]
+    }},
+
+
+"data_cleaning": {
+    "universal": {
+           "shutdown_period_removal": "remove_rows"
+    },
+    "default": {
+           "handle_missing_values": "mean",
+           "negative_values": "mean"
+    },
+    "series_specific": {}
+},
+"data_preprocessing": {
+    "default": {
+           "methods": [
+                  "normalize"
+           ]
+    },
+    "time_series_specific": [],
+    "mandatory": {
+           "methods": [
+                  "remove_na"
+           ]
+    }
+},
+"feature_engineering": {
+    "default": {
+           "features": [],
+           "reference_name": "default_features"
+    },
+    "time_series_specific": [],
+    "rolling_window": "1T"
+},
+"output_storage": {
+    "DB": "InfluxDB",
+    "credentials": {
+           "bucket": "predictive_maintenance",
+           "measurement": "CRUDE_AREA"
+    },
+    "data_storage": {
+           "result": {
+                  "tags": {
+                         "equipment": "CRUDE_AREA"
+                  },
+                  "fields": [
+                         "all"
+                  ]
+           }
+    }
+},
+"ML_implementation": 
+    {
+           "sub_model_id": "01",
+           "implementation_type": "REGRESSOR",
+           "model": "XGB_REGRESSOR",
+           "Independent_variable":["Temperature_C", "Pressure_bar", "FlowRate_m3_hr", "Level_%"],
+           "Dependent_variable":["Yield_bbl_day"]
+
+           
+    },
+"PostProcessing": {
+        "model_specific": {
+               "01": {
+                      "output": [
+                             "Denoramlize"]
+                      }
+                    }
+
+}}
+    
