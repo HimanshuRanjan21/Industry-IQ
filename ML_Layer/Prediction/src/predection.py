@@ -45,7 +45,19 @@ class PredictionModel:
         print("✍🏻 Write Data")
         print(f"{datetime.now()} \t {final_df.iloc[0,2]} \t {(final_df.shape[0])}", end="\n")
         final_df = final_df.reset_index()
+
+        final_df['Timestamp'] = pd.to_datetime(final_df['Timestamp'])
+
+        final_df['Timestamp'] = final_df['Timestamp'].dt.strftime('%Y-%m-%d %H:%M:%S')
+
+        json_data = final_df.to_json(orient='records')
+
+        with open(r'artifact//CRUDE_AREA_Predicted_Level.json', 'w') as f:
+            f.write(json_data)
+
         print(final_df)
+        print(json_data)
+
         api.write_time_series_data(final_df, 
                                    self.model_config["output_storage"]["credentials"]["bucket"], 
                                    self.model_config["output_storage"]["credentials"]["measurement"], 
