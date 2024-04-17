@@ -190,7 +190,7 @@ class APIHandler:
                     |> yield(name: "mean")
                 '''
             try:
-                # print(flux_query)
+                print(flux_query)
                 # execute the flux query
                 result = client.query_api().query(org=self.org, query=flux_query)
                 print(result)

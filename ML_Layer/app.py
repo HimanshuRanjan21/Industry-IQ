@@ -1,5 +1,8 @@
 from flask import Flask, request, render_template
 import json
+
+import sys
+sys.path.append('c:\\Users\\hp\\Desktop\\CodeSpace\\Projects\\Industry-IQ\\Industry-IQ')
 from ML_Layer.Prediction.src.predection import PredictionModel
 
 app = Flask(__name__)
@@ -10,10 +13,15 @@ def home():
     return 'None'
 
 # Route for predicting data
-@app.route('/predictdata/<start_time>-<end_time>-<Area_id>', methods=['GET', 'POST'])
+@app.route('/predictdata/<start_time>/<end_time>/<Area_id>', methods=['GET', 'POST'])
 def predict_data(start_time, end_time, Area_id):
+    start_time=str(start_time)
+    end_time=str(end_time)
+    Area_id=str(Area_id)
+
+    print("🚗🚗",start_time,end_time,Area_id)
     try:
-        file_path = f'METADATA/ML_Layer/{Area_id}.json'
+        file_path = f'METADATA/ML_Layer/Predection/{Area_id}.json'
         with open(file_path, 'r') as file:
             config = json.load(file)
         pred = PredictionModel(config)
@@ -25,3 +33,6 @@ def predict_data(start_time, end_time, Area_id):
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5001)
+
+
+# /predictdata/2023-12-01-2024-01-01-CRUDE_AREA

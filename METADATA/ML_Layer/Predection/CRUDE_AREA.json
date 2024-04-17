@@ -5,7 +5,7 @@
     "credentials": {
            "bucket": "Plant_data",
            "measurement": "All_datas",
-           "tag_name":["Temperature_C", "Pressure_bar", "FlowRate_m3_hr", "Level_%"]
+           "tag_name":["Temperature_C", "Pressure_bar", "FlowRate_m3_hr"]
     }},
 
 
@@ -43,8 +43,8 @@
 "output_storage": {
     "DB": "InfluxDB",
     "credentials": {
-           "bucket": "predictive_maintenance",
-           "measurement": "CRUDE_AREA"
+           "bucket": "plant",
+           "measurement": "predictive_maintenance"
     },
     "data_storage": {
            "result": {
